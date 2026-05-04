@@ -1,0 +1,9 @@
+roiManager("Deselect");
+roiManager("Delete");
+name = getTitle();
+sname = split(name, ".");
+selectImage(name);
+roiManager("Open", "C:/01_projects/GitHub/UCT/semester-project-2026/images/student_02/" + sname[0] + ".zip");
+run("ROI Map");
+rename(sname[0] + "_lmap.tiff");
+//save("C:/01_projects/GitHub/UCT/semester-project-2026/labels/student_02/"+sname[0] + "_lmap.tiff");
